@@ -1,0 +1,53 @@
+.About img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+}
+.About div h1 {
+  position: absolute;
+  left: 33%;
+  top: 10%;
+  color: rgba(216, 227, 228, 0.959);
+  font-size: 50px;
+  text-shadow: 0px 0px 7px;
+  line-height: 1.3em;
+}
+.About div p {
+  position: absolute;
+  width: 1000px;
+  top: 30%;
+  left: 7%;
+  color: rgba(216, 227, 228, 0.959);
+  font-size: 25px;
+  text-shadow: #000000 0px 0px 7px;
+  line-height: 1.8em;
+}
+
+@media (max-width: 700px) {
+  .About img {
+    width: 100%;
+    height: 150%;
+    position: relative;
+    display: inline-block;
+  }
+  .About div h1 {
+    position: absolute;
+    left: 40%;
+    top: 10%;
+    color: rgba(216, 227, 228, 0.959);
+    font-size: 10px;
+    text-shadow: 0px 0px 7px;
+    line-height: 1.3em;
+  }
+  .About div p {
+    position: absolute;
+    width: 500px;
+    top: 15%;
+    left: 5%;
+    color: rgba(216, 227, 228, 0.959);
+    font-size: 10px;
+    text-shadow: #000000 0px 0px 7px;
+    line-height: 1.8em;
+  }
+}

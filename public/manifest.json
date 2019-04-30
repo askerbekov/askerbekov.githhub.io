@@ -1,0 +1,15 @@
+{
+  "short_name": "Askerbekov Mederbek",
+  "name": "ASKERBEKOV MEDERBEK",
+  "icons": [
+    {
+      "src": "https://dewey.tailorbrands.com/production/brand_version_mockup_image/105/1926687105_4b73c39d-82ba-47b1-873c-7b48c55df03d.png?cb=1556203359",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
