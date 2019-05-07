@@ -8,54 +8,54 @@ function Navigation(props) {
   return (
     <div className="Navigation">
       <nav>
-        <ul>
-          <li>
-            <NavLink activeClassName="active" to="/">
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink activeClassName="active" to="/about">
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              activeClassName="active"
-              to={{
-                pathname: "/services",
-                hash: "services"
-              }}
-            >
-              Services
-            </NavLink>
-          </li>
-          <li>
-            <NavLink activeClassName="active" to="/portfolio">
-              Portfolio
-            </NavLink>
-          </li>
-          <li>
-            <NavLink activeClassName="active" to="/contact">
-              Contact
-            </NavLink>
-          </li>
-        </ul>{" "}
-        <button
-          onClick={props.toggleHandler}
-          for="burger"
-          id="Burger"
-          className="toggle"
-        >
-          X
-          <span />
-          <span />
-          <span />
-        </button>
+        <div class="nav">
+          <ul>
+            <li class="home">
+              <NavLink activeClassName="active" to="/">
+                Home
+              </NavLink>
+            </li>
+            <li class="tutorials">
+              {" "}
+              <NavLink activeClassName="active" to="/about">
+                About
+              </NavLink>
+            </li>
+            <li class="about">
+              {" "}
+              <NavLink
+                activeClassName="active"
+                to={{
+                  pathname: "/services",
+                  hash: "services"
+                }}
+              >
+                Services
+              </NavLink>
+            </li>
+            <li class="news">
+              {" "}
+              <NavLink activeClassName="active" to="/portfolio">
+                Portfolio
+              </NavLink>
+            </li>
+            <li class="contact">
+              {" "}
+              <NavLink activeClassName="active" to="/contact">
+                Contact
+              </NavLink>
+            </li>{" "}
+            <button className="toggle" onClick={props.toggleHandler}>
+              X
+            </button>
+          </ul>
+          <Drawer open={props.drawerOpen} />
+          <Backdrop
+            open={props.drawerOpen}
+            toggleHandler={props.toggleHandler}
+          />
+        </div>
       </nav>
-
-      <Drawer open={props.drawerOpen} />
-      <Backdrop open={props.drawerOpen} toggleHandler={props.toggleHandler} />
     </div>
   );
 }
